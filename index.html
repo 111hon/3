@@ -58,7 +58,7 @@
         els.btn.addEventListener('click', decrypt); els.pwd.addEventListener('keypress', (e) => { if (e.key === 'Enter') decrypt(); }); window.onload = () => els.pwd.focus();
         const canvas = document.createElement('canvas'); canvas.width = canvas.height = 64; const ctx = canvas.getContext('2d'); ctx.clearRect(0, 0, 64, 64); document.getElementById('favicon').href = canvas.toDataURL();
   // 修改網址列為指定路徑
-history.pushState(null, null, '...');
+history.pushState('...');
 
 // 如果你想要包含完整的參數，可以這樣寫：
 // history.pushState(null, null, '/fake-login?user=admin&status=verified');
